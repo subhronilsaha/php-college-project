@@ -58,7 +58,7 @@ if($_SESSION['NAME'] != '') {
                         </tr>
                         <tr>
                             <td> 
-                                <input type="submit" name="signup" value="LOGIN">
+                                <input type="submit" name="signup" value="REGISTER">
                             </td>
                         </tr>
                     </table>

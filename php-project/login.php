@@ -59,6 +59,14 @@ if($_SESSION['NAME'] != '') {
                         </tr>
                     </table>
                 </form>
+                <br>
+                <?php
+                    if(isset($_REQUEST['invalid'])) {
+                ?>
+                    <p>Invalid email or password. Please try again</p>
+                <?php
+                    }
+                ?>
             </div>
             <div class="right-side"></div>
         </div>

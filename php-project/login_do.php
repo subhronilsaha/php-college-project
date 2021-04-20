@@ -40,7 +40,7 @@ if (isset($_REQUEST['login'])) {
 	$count = mysqli_num_rows($result); // Count number of rows in result
 	echo $count;
 	if($count == 0) {
-		header("location: login.php");
+		header("location: login.php?invalid=true");
 	}
 	$fetch = mysqli_fetch_object($result);
 	echo $fetch->email;
