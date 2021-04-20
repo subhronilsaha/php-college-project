@@ -8,11 +8,11 @@
     if(isset($_REQUEST['del'])) {
         $query = "delete from items where id = '" . $_REQUEST['del'] . "'";
         mysqli_query($con, $query);
-        header("location: get_users.php");
+        header("location: get_item.php");
     }
 
 	include('../extra/meta.php');
-    include('../extra/header_user.php');
+    include('../extra/header_item.php');
 ?>
 
 <div class="content">
@@ -35,7 +35,7 @@
     			<td> <?php echo $fetch->id; ?> </td>
                 <td> 
                     <img 
-                    src="user_images/<?php echo $fetch->image_name; ?>" 
+                    src="item_images/<?php echo $fetch->image_name; ?>" 
                     width=50 
                     height=50>
                 </td>
@@ -50,11 +50,11 @@
 				<td> <?php echo $fetch1->c_name; ?> </td>
                 <td>
 					<a 
-					href="edit_user.php?id=<?php echo $fetch->id; ?>">
+					href="edit_item.php?id=<?php echo $fetch->id; ?>">
 						Edit
 					</a>
 				</td>
-                <td><a href="get_users.php?del=<?php echo $fetch->id; ?>">Delete</a></td>
+                <td><a href="get_item.php?del=<?php echo $fetch->id; ?>">Delete</a></td>
     		</tr>
     		<?php } ?>
     	</table>

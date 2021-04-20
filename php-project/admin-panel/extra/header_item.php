@@ -7,8 +7,8 @@
             </div>
             <ul class="navbar">
                 <li><a href="../index.php">Modules</a></li>
-                <li><a href="get_users.php">View All Items</a></li>
-                <li><a href="add_user.php">Add an Item</a></li>
+                <li><a href="get_item.php">View All Items</a></li>
+                <li><a href="add_item.php">Add an Item</a></li>
                 <li><a href="../login_do.php?logout=true">Logout</a></li>
             </ul>
         </div>

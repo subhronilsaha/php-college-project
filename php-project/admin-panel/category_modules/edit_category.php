@@ -8,11 +8,11 @@
     if(isset($_POST['update_category'])) {
         $query = "update categories set c_name='" . $_POST['c_name'] . "' where c_id = '" .$_REQUEST['id'] . "'";
         mysqli_query($con, $query);
-        header("location: get_courses.php");
+        header("location: get_category.php");
     }
     
 	include('../extra/meta.php');
-    include('../extra/header_course.php');
+    include('../extra/header_category.php');
 ?>
 
 <div class="content">

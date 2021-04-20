@@ -1,7 +1,7 @@
 <?php
     include('../extra/connection_h.php');
 	include('../extra/meta.php');
-    include('../extra/header_user.php');
+    include('../extra/header_item.php');
 
 	//echo exec('whoami');
 
@@ -16,7 +16,7 @@
     	
     	// FILE UPLOAD
     	$fileName = $_FILES['file']['name'];
-		$target_dir = "user_images/";
+		$target_dir = "item_images/";
 		
 		//echo $fileName . " " . $target_dir;
 
@@ -79,7 +79,7 @@
 			mysqli_query($con, $query);
 		}
 
-		header("location: get_users.php");
+		header("location: get_item.php");
 	}
 
 	// FETCH COURSE DATA

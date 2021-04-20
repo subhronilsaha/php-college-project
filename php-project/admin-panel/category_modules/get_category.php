@@ -7,17 +7,19 @@
     if(isset($_REQUEST['del'])) {
         $query = "delete from categories where c_id = '" . $_REQUEST['del'] . "'";
         mysqli_query($con, $query);
-        header("location: get_courses.php");
+        $query1 = "delete from items where c_id = '" . $_REQUEST['del'] . "'";
+        mysqli_query($con, $query1);
+        header("location: get_category.php");
     }
 
     if(isset($_REQUEST['status'])) {
         $query = "update categories set status = '" . $_REQUEST['status'] . "' where c_id = '" . $_REQUEST['id'] . "'";
         mysqli_query($con, $query);
-        header("location: get_courses.php");
+        header("location: get_category.php");
     }
 
 	include('../extra/meta.php');
-    include('../extra/header_course.php');
+    include('../extra/header_category.php');
 ?>
 
 <div class="content">
@@ -50,8 +52,8 @@
                     }
                     ?> 
                 </td>
-                <td><a href="edit_course.php?id=<?php echo $fetch->c_id; ?>">Edit</a></td>
-                <td><a href="get_courses.php?del=<?php echo $fetch->c_id; ?>">Delete</a></td>
+                <td><a href="edit_category.php?id=<?php echo $fetch->c_id; ?>">Edit</a></td>
+                <td><a href="get_category.php?del=<?php echo $fetch->c_id; ?>">Delete</a></td>
     		</tr>
     		<?php } ?>
     	</table>

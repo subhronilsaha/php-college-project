@@ -7,8 +7,8 @@
             </div>
             <ul class="navbar">
                 <li><a href="../index.php">Modules</a></li>
-                <li><a href="get_courses.php">View Categories</a></li>
-                <li><a href="add_course.php">Add Category</a></li>
+                <li><a href="get_category.php">View Categories</a></li>
+                <li><a href="add_category.php">Add Category</a></li>
                 <li><a href="../login_do.php?logout=true">Logout</a></li>
             </ul>
         </div>

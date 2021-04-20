@@ -1,12 +1,12 @@
 <?php
     include('../extra/connection_h.php');
 	include('../extra/meta.php');
-    include('../extra/header_course.php');
+    include('../extra/header_category.php');
 
-    if(isset($_POST['insert_course'])) {
+    if(isset($_POST['insert_category'])) {
         $query = "insert into categories set c_name='" . $_POST['c_name'] . "', status = 'active'";
         mysqli_query($con, $query);
-        header("location: get_courses.php");
+        header("location: get_category.php");
     }
 
 ?>
@@ -23,7 +23,7 @@
     			<td><input type="text" name="c_name" value=""></td>
     		</tr>
     		<tr>
-    			<td> <input type="submit" name="insert_course" value="INSERT"></td>
+    			<td> <input type="submit" name="insert_category" value="INSERT"></td>
     		</tr>
     	</table>
     </form>

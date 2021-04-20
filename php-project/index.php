@@ -108,7 +108,7 @@
             </div>
 
             <div class="middle"> 
-                <h1>Items Available</h1> 
+                <h1>Items Available in Inventory</h1> 
 
                 <br>
                 
@@ -126,7 +126,7 @@
                         <td> <?php echo $fetch->id; ?> </td>
                         <td> 
                             <img 
-                            src="admin-panel/user_modules/user_images/<?php echo $fetch->image_name; ?>" 
+                            src="admin-panel/item_modules/item_images/<?php echo $fetch->image_name; ?>" 
                             width=50 
                             height=50>
                         </td>

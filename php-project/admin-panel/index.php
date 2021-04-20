@@ -41,8 +41,8 @@ include('extra/connection.php');
                 <br>
                 <div>
                     <ul>
-                        <li><a href="user_modules/get_users.php">All items </a></li>
-                        <li><a href="course_modules/get_courses.php">Categories </a></li>
+                        <li><a href="item_modules/get_item.php">All items </a></li>
+                        <li><a href="category_modules/get_category.php">Categories </a></li>
                     </ul>
                 </table>
                 </div>
