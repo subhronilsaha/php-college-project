@@ -16,3 +16,7 @@ This being a small scale intended inventory. We went for a database that has con
 ## Frontend
 
 SSR pages from the server with CSS styling.
+
+## Documentation 
+
+https://drive.google.com/file/d/1BHe24LZVD70golfAb0rXnuku0LfgSkQc/view
